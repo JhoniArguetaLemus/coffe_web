@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Coffee</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0,0.2)), url('https://cdn.pixabay.com/photo/2017/07/26/21/14/spilled-coffee-2543133_1280.jpg');
+            background-size:cover;
+            height: 600px;
+         
+        }
+
+        input {
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(251, 251, 251, 0.6));
+
+        }
+
+        #btnSearch{
+            background: linear-gradient(rgba(59,44, 44, 0.9), rgba(59,44, 44, 0.9));
+
+        }
+        nav.scrolled {
+            background: linear-gradient(rgba(59, 44,44, 0.6), rgba(59,44, 44, 0.6));
+        }
+
+    </style>
+</head>
+<body>
+    <header > 
+        <nav id="navbar" class="flex  border-b-2 border-white    text-white items-center justify-between fixed w-[100%] top-0  ">
+            <div class=" m-[1rem] ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG" alt="" width="70" class="rounded-[50%] hover:animate-spin">
+            </div>
+
+            <div id="menuList" class="hidden flex flex-col bg-black p-[1rem]  items-center top-[6.3rem] absolute right-0 bottom-0 h-[100vh] w-[80%] opacity-95 bg-gradient-to-t from-[rgba(59,44,44)] to-[rgba(59,44,44)] opacity-9 ">
+
+                <a href="" class="text-[2rem] p-[1rem] hover:underline   ">Inicio</a>
+                <a href="" class="text-[2rem]  p-[1rem]  hover:underline">Ayuda</a>
+                <a href="" class="text-[2rem] p-[1rem] hover:underline ">Contacto</a>
+            </div>
+
+             <button id="btnMenu" class="m-[2rem] border-2 border-white p-[0.2rem]">Menu</button>
+        </nav>
+        
+
+
+        <div>
+
+            <div class="w-[100%] pt-[14rem]  ">
+                <h4 class="text-[1.6rem] text-center text-white font-bold " >Todo lo que buscas, <br> en un solo lugar</h4>
+    
+            </div>
+            <div class="w-[100%] flex justify-center mt-[4rem]  ">
+
+
+                <input  type="text" class="w-[60%]  border-white border-2 text-[1.5rem]   h-[50px]">
+                <button id="btnSearch" class="   w-[4rem] cursor-pointer border-t-2 border-b-2 border-r-2 border-white text-white  font-bold ">Buscar</button>
+            </div>
+
+        </div>
+        
+
+        
+        
+    </header>
+
+
+    <section class="h-[1000px] ">
+
+        <div class="grid grid-cols-1">
+            <div class="border-2 border-black mt-[1rem] w-[95%] mx-auto p-[1rem] rounded-[1rem] hover:bg-blue-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi tempora libero voluptas, reprehenderit et architecto magni esse illo, optio asperiores quos odit error adipisci, non velit dolorum laboriosam iste.</div>
+            <div class="border-2 border-black mt-[1rem] w-[95%] mx-auto p-[1rem] rounded-[1rem]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nostrum atque enim rem deserunt facere aspernatur. Illo vel, beatae accusantium exercitationem labore laboriosam neque adipisci, voluptatum amet, veritatis esse minus.</div>
+            <div class="border-2 border-black mt-[1rem] w-[95%] mx-auto p-[1rem] rounded-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus eos quo officia modi eius fugit ducimus optio tempore quas id, recusandae provident praesentium illo maxime culpa eaque vel nesciunt?</div>
+            <div class="border-2 border-black mt-[1rem] w-[95%] mx-auto p-[1rem] rounded-[1rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo consectetur atque voluptate. Cumque officia nemo aliquid saepe, nisi, architecto ad dolor, alias ab dolores illo. Obcaecati quas magnam saepe nulla?</div>
+
+        </div>
+
+    
+    </section>
+
+    <script src="js/app.js">
+
+
+    </script>
+    
+</body>
+</html>
