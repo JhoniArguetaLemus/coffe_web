@@ -38,23 +38,30 @@
             background: linear-gradient(rgba(59, 44,44, 0.6), rgba(59,44, 44, 0.6));
         }
 
+        @media screen and (max-width: 767px){
+            #menuList{
+                background-color: rgba(59,44,44);
+                opacity: 95%;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header > 
-        <nav id="navbar" class="flex  border-b-2 border-white    text-white items-center justify-between fixed w-[100%] top-0  ">
-            <div class=" m-[1rem] ">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG" alt="" width="70" class="rounded-[50%] hover:animate-spin">
+        <nav id="navbar" class="flex  border-b-2 border-white    text-white items-center justify-between fixed w-[100%] top-0 opacity-95 bg-gradient-to-t from-[rgba(59,44,44)] to-[rgba(59,44,44)]  ">
+            <div class=" m-[1rem] md:ml-[4rem] ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG" alt="" width="70" class="rounded-[50%] hover:animate-spin md:w-[6rem]">
             </div>
 
-            <div id="menuList" class="hidden flex flex-col bg-black p-[1rem]  items-center top-[6.3rem] absolute right-0 bottom-0 h-[100vh] w-[80%] opacity-95 bg-gradient-to-t from-[rgba(59,44,44)] to-[rgba(59,44,44)] opacity-9 ">
+            <div id="menuList" class="hidden md:mr-[5rem]   md:flex md:flex-row md:static md:h-[1rem] md:w-auto   flex flex-col  p-[1rem]  items-center top-[6.3rem] absolute right-0 bottom-0 h-[100vh] w-[80%]    ">
 
                 <a href="" class="text-[2rem] p-[1rem] hover:underline   ">Inicio</a>
                 <a href="" class="text-[2rem]  p-[1rem]  hover:underline">Ayuda</a>
                 <a href="" class="text-[2rem] p-[1rem] hover:underline ">Contacto</a>
             </div>
 
-             <button id="btnMenu" class="m-[2rem]  p-[0.2rem]"><i class="fa-solid fa-bars text-[1.5rem]"></i></button>
+             <button id="btnMenu" class="m-[2rem]  p-[0.2rem] md:hidden" ><i class="fa-solid fa-bars text-[1.5rem]"></i></button>
         </nav>
         
 
@@ -62,7 +69,7 @@
         <div>
 
             <div class="w-[100%] pt-[14rem]  ">
-                <h4 class="text-[1.9rem]  w-[80%] mx-auto text-justify text-white font-bold " >Todo lo que buscas, en un solo lugar</h4>
+                <h4 class="text-[1.9rem]  w-[80%] mx-auto text-justify text-white font-bold md:text-center " >Todo lo que buscas, en un solo lugar</h4>
     
             </div>
             <div class="w-[100%] flex justify-center mt-[4rem]  ">
@@ -80,11 +87,14 @@
     </header>
 
 
-    <section >
+    <section class="mt-[3rem]">
+        <h2 class="font-bold text-[2rem] text-center">Nuestros productos</h2>
+        
 
-        <div class="grid grid-cols-1 gap-[40px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[40px] w-[90%] mt-[4rem] mx-auto">
+              
 
-            <div class=" mt-[1rem] w-[95%] mx-auto  rounded-[1rem] hover:bg-blue-300 shadow-lg shadow-black-500/80">
+            <div class=" mt-[1rem] w-[100%] mx-auto  rounded-[1rem]  shadow-lg shadow-black-500/80">
                 <img class="rounded-[1rem]" src="https://www.revistaeyn.com/binrepository/1440x900/120c0/1200d900/none/26086/BYMG/maxresdefault-1024x6400_EN1216747_MG224208131.jpg" alt="" width="100%">
                 <p class="w-[80%] mx-auto p-[0.5rem] font-bold text-[1rem]">Cafe de calidad hecho en El Salvador</p>
                 <div class="flex items-center justify-center pb-[2rem] mt-[1rem]">
@@ -94,7 +104,7 @@
                 </div>
             </div>
 
-            <div class=" mt-[1rem] w-[95%] mx-auto  rounded-[1rem] hover:bg-blue-300 shadow-lg shadow-black-500/80">
+            <div class=" mt-[1rem] w-[100%] mx-auto  rounded-[1rem]  shadow-lg shadow-black-500/80">
                 <img class="rounded-[1rem]" src="https://www.revistaeyn.com/binrepository/1440x900/120c0/1200d900/none/26086/BYMG/maxresdefault-1024x6400_EN1216747_MG224208131.jpg" alt="" width="100%">
                 <p class="w-[80%] mx-auto p-[0.5rem] font-bold text-[1rem]">Cafe de calidad hecho en El Salvador</p>
                 <div class="flex items-center justify-center pb-[2rem] mt-[1rem]">
@@ -104,7 +114,7 @@
                 </div>
             </div>
 
-            <div class=" mt-[1rem] w-[95%] mx-auto  rounded-[1rem] hover:bg-blue-300 shadow-lg shadow-black-500/80">
+            <div class=" mt-[1rem] w-[100%] mx-auto  rounded-[1rem]  shadow-lg shadow-black-500/80">
                 <img class="rounded-[1rem]" src="https://www.revistaeyn.com/binrepository/1440x900/120c0/1200d900/none/26086/BYMG/maxresdefault-1024x6400_EN1216747_MG224208131.jpg" alt="" width="100%">
                 <p class="w-[80%] mx-auto p-[0.5rem] font-bold text-[1rem]">Cafe de calidad hecho en El Salvador</p>
                 <div class="flex items-center justify-center pb-[2rem] mt-[1rem]">
@@ -115,7 +125,7 @@
             </div>
 
 
-            <div class=" mt-[1rem] w-[95%] mx-auto  rounded-[1rem] hover:bg-blue-300 shadow-lg shadow-black-500/80">
+            <div class=" mt-[1rem] w-[100%] mx-auto  rounded-[1rem]  shadow-lg shadow-black-500/80">
                 <img class="rounded-[1rem]" src="https://www.revistaeyn.com/binrepository/1440x900/120c0/1200d900/none/26086/BYMG/maxresdefault-1024x6400_EN1216747_MG224208131.jpg" alt="" width="100%">
                 <p class="w-[80%] mx-auto p-[0.5rem] font-bold text-[1rem]">Cafe de calidad hecho en El Salvador</p>
                 <div class="flex items-center justify-center pb-[2rem] mt-[1rem]">
